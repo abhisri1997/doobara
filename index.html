@@ -5,6 +5,10 @@
   <title>DOOBARA</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+
+  <!-- axios -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.0/axios.js"></script>
+
   <!-- slider -->
   <style>
     * {
@@ -478,11 +482,11 @@
       <h1 id="cus">Contact Us</h1>
       <div class="contact-form">
         <div class="col-md-8 contact-grid">
-          <form>
-            <input type="text" value="Name" onfocus="this.value='';" onblur="if (this.value == '') {this.value ='Name';}">
-            <input type="text" value="Email" onfocus="this.value='';" onblur="if (this.value == '') {this.value ='Email';}">
-            <input type="text" value="Book Name" onfocus="this.value='';" onblur="if (this.value == '') {this.value ='Book Name';}">
-            <textarea cols="77" rows="6" value=" " onfocus="this.value='';" onblur="if (this.value == '') {this.value = 'Message - Rent or Buy';}">Message - Rent or Buy</textarea>
+          <form onsubmit="return sendMail(event)">
+            <input type="text" id="name" placeholder="Name" required="">
+            <input type="text" id="email" placeholder="Email" required="">
+            <input type="text" id="book" placeholder="Book Name">
+            <textarea cols="77" id="message" rows="6" placeholder="Message - Rent or Buy"></textarea>
             <div class="send">
               <center><input type="submit" value="Send"></center>
             </div>
@@ -568,6 +572,13 @@ Near Shyama garden</p>
   <script src="js/custom-navigation.js"></script>
   <script src="js/custom-flex.js"></script>
   <script src="js/custom-owl.js"></script>
+  <script src="js/index.js"></script>
+
+
+
+  <script>
+  	
+  </script>>
 
 
 
