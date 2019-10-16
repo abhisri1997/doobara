@@ -8,7 +8,7 @@ function sendMail(e) {
 	var message = document.getElementById('message').value;
 	axios({
 		method: 'post',
- 		 url: 'http://127.0.0.1:3000/sendMail',
+ 		 url: 'https://secure-depths-46669.herokuapp.com/sendMail',
  		 headers: {'Content-Type': 'application/json'},
  		 data: {
  			name:name,
