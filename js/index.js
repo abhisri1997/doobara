@@ -18,6 +18,7 @@ function sendMail(e) {
     	}
 	}) .then(function (response) {
     console.log(response);
+    alert("Message Sent");
   });
 	// body...
 
