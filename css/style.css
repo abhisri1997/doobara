@@ -9,6 +9,19 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
+::placeholder {
+  color: grey;
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+ color: grey;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+ color: grey;
+}
+
 a {
   transition: 0.5s all;
   -webkit-transition: 0.5s all;
@@ -902,7 +915,7 @@ ul.social-network li a i {
   outline: none;
   border: 1px solid #A09F9F;
   font-size: 1em;
-  color: #A09F9F;
+  color: black;
   -webkit-appearance: none;
 }
 
